@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('https://images.unsplash.com/photo-1533642337222-5196d3adf91b');
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(10px);
+}
+
+#calendar-container {
+    width: 90%;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+#calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#calendar-header h2 {
+    margin: 0;
+    color: #333;
+}
+
+#calendar-header button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.3s;
+}
+
+#calendar-header button:hover {
+    color: #007BFF;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    width: 14.28%;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+    position: relative;
+    transition: background 0.3s, color 0.3s;
+}
+
+th {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+.holiday {
+    background-color: rgba(255, 99, 132, 0.3);
+    color: #d9534f;
+    font-weight: bold;
+}
+
+td.empty {
+    background: rgba(240, 240, 240, 0.6);
+}
+
+td:not(.empty):hover {
+    background: rgba(0, 123, 255, 0.1);
+    color: #007BFF;
+    cursor: pointer;
+}
